@@ -19,4 +19,4 @@ component analysis, k-means, spectral clustering,
 manifold learning, network statistics, community
 detection.
 
-Finally, this repository contains the two coursework projects that had to be completed for a successful outcome in the course.
+Finally, this repository contains the two coursework projects (both in Python) that had to be completed for a successful outcome in the course
