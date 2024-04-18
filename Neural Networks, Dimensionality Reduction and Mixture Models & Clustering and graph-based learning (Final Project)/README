@@ -1,6 +1,14 @@
-In Task 1, I explored how a neural network architecture and techniques for dimensionality reduction performed on a set of images from the MNIST dataset. 
-This dataset consisted of two files: a training set with 6000 images (file MNIST_train.csv) and a test set with 1000 images (file MNIST_test.csv). Each image was 28 x 28 pixels, encoded as an array of size 784. 
-The images represented handwritten digits from 0 to 9, so they belonged to 10 different classes (the column ‘Label’ indicated the class of each image). 
-The dataset was well balanced, i.e., it had 600 images of each class in the training set and 100 images of each class in the test set. 
-First, I trained a feed-forward neural network to classify images; then, I performed image denoising through Principal Component Analysis (PCA) and Non-negative Matrix Factorization (NMF), 
+In Task 1, I explored how a neural network architecture and techniques for dimensionality reduction performed on a set of images 
+from the MNIST dataset. This dataset consisted of two files: a training set with 6000 images (file MNIST_train.csv) and a test set with 
+1000 images (file MNIST_test.csv). Each image was 28 x 28 pixels, encoded as an array of size 784. The images represented handwritten digits
+from 0 to 9, so they belonged to 10 different classes (the column ‘Label’ indicated the class of each image). The dataset was well balanced,
+i.e., it had 600 images of each class in the training set and 100 images of each class in the test set. First, I trained a feed-forward neural
+network to classify images; then, I performed image denoising through Principal Component Analysis (PCA) and Non-negative Matrix Factorization (NMF), 
 and modeled the data as a Gaussian Mixture.
+
+In Task 2, I worked on a dataset reporting measurements of gene expression in different tumor samples (file gene_expression_data.csv). 
+This dataset consisted of a matrix 800 x 96: each of the 800 rows corresponded to one sample of gene expression levels; the 95 columns
+containing ‘Gene’ in the name gave the expression levels of different genes (the descriptors); the column 'Type' contained acronyms denoting
+the type of tumor from which each sample came from (BRCA, KIRC, COAD, LUAD, and PRAD). First, I performed clustering through k-means
+to identify groups of samples with shared gene expression patterns; next, I resorted to graph-based analysis to study the structure
+of the network of co-regulation among genes that could be constructed from these expression data.
