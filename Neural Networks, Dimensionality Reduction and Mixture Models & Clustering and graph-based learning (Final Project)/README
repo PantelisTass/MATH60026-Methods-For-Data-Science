@@ -1,1 +1,6 @@
-
+In Task 1, I explored how a neural network architecture and techniques for dimensionality reduction performed on a set of images from the MNIST dataset. 
+This dataset consisted of two files: a training set with 6000 images (file MNIST_train.csv) and a test set with 1000 images (file MNIST_test.csv). Each image was 28 x 28 pixels, encoded as an array of size 784. 
+The images represented handwritten digits from 0 to 9, so they belonged to 10 different classes (the column ‘Label’ indicated the class of each image). 
+The dataset was well balanced, i.e., it had 600 images of each class in the training set and 100 images of each class in the test set. 
+First, I trained a feed-forward neural network to classify images; then, I performed image denoising through Principal Component Analysis (PCA) and Non-negative Matrix Factorization (NMF), 
+and modeled the data as a Gaussian Mixture.
